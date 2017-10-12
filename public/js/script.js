@@ -5,15 +5,8 @@ $(function(){
   var messages_template = Handlebars.compile($('#messages-template').html());
 
   var peer = new Peer({
-    host: 'localhost',
-    port: 9000,
-    path: '/peerjs',
-    debug: 3,
-    config: {'iceServers': [
-    { url: 'stun:stun1.l.google.com:19302' },
-    { url: 'turn:numb.viagenie.ca',
-      credential: 'muazkh', username: 'webrtc@live.com' }
-    ]}
+   key : 'mogw9au8cev4e7b9',
+    debug: 3
   });
 
   peer.on('open', function(){
